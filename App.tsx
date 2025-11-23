@@ -133,7 +133,7 @@ export default {
           <!-- Avatar -->
           <img 
             :src="profile?.avatarUrl" 
-            class="w-24 h-24 rounded-lg bg-[var(--hover-bg)] grayscale"
+            class="w-24 h-24 rounded-lg bg-[var(--hover-bg)]"
             alt="avatar"
           />
           
