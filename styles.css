@@ -1,0 +1,94 @@
+:root {
+  /* Default Dark Theme */
+  --bg-color: #0d1117;
+  --text-color: #c9d1d9;
+  --heading-color: #ffffff;
+  --border-color: #30363d;
+  --hover-bg: #161b22;
+  --muted-color: #8b949e;
+  --link-color: #58a6ff;
+}
+
+/* Light Theme Override */
+body.light-mode {
+  --bg-color: #ffffff;
+  --text-color: #24292f;
+  --heading-color: #1f2328;
+  --border-color: #d0d7de;
+  --hover-bg: #f6f8fa;
+  --muted-color: #6e7781;
+  --link-color: #0969da;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Markdown Styles */
+.markdown-body {
+  font-family: inherit;
+}
+
+.markdown-body h1 {
+  font-size: 1.8em;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.markdown-body h2 {
+  font-size: 1.4em;
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.markdown-body p {
+  margin-bottom: 1.2em;
+}
+
+.markdown-body a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.markdown-body code {
+  background: var(--hover-bg);
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
+}
+
+.markdown-body pre {
+  background: var(--hover-bg);
+  border: 1px solid var(--border-color);
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-bottom: 1.5em;
+}
+
+.markdown-body blockquote {
+  border-left: 3px solid var(--border-color);
+  padding-left: 1em;
+  color: var(--muted-color);
+}
+
